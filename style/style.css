@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:wght@800&display=swap');
+body{
+    background-color: rgb(243, 238, 238);
+    text-align: center;
+    overflow: hidden;
+}
+form{
+    background-color: white;
+    height: 500px;
+    display: inline-block;
+    margin-top: 100px;
+    padding: 0 30px;
+}
+.reset_password_form .logo{
+    /* background-color: rgb(202, 202, 247); */
+    display: inline-block;
+    /* margin: 45px; */
+    border-radius: 48%;
+    position: relative;
+    bottom: 80px;
+    
+}
+.reset_form header{
+    font-family:'Bruno Ace SC', 'poppins' ;
+    font-size: xx-large;
+    position: relative;
+    bottom: 30px;
+}
+.reset_form .input{
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+}
+.reset_form .input input{
+    width: 300px;
+    height: 35px;
+    border: 2px solid rgb(228, 228, 238);
+    border-radius: 10px;
+}
+.reset_form .input label{
+    font-family:'Bruno Ace SC', 'poppins' ;
+    text-align: left;
+    padding: 5px;
+    color: black;
+}
+.reset_form .input label span{
+    position:relative;
+    top: 2.5px;
+}
+.reset_form a input{
+    /* background-color: rgb(21, 21, 238); */
+    background-color: rgb(202, 202, 247);
+    width: 300px;
+    height: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 2px solid rgb(226, 226, 235);
+    font-size: larger;
+    font-weight: 600;
+    color: rgb(11, 11, 12);
+    font-family:'Bruno Ace SC', 'poppins';
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+footer{
+    color: rgb(90, 89, 89);
+    letter-spacing: 3px;
+    font-size: x-small;
+}
+footer h5{
+    position: relative;
+    bottom: px;
+}
+footer h5 span{
+    position: relative;
+    top: 10px;
+}
