@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr .net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
 </head>
 <body onsubmit="return validatePassword()">
@@ -25,15 +26,19 @@
 
                 <div class="input" >
 
-                    <label for="Password">New Password 
+                    <label for="Password" class="newPass">New Password 
                         <span class="material-icons-sharp">
                         lock_open
                         </span>
                     </label>
 
-                    <input type="checkbox" class="showPassword" style="height: 17px; position: relative; left: 283px; top: 10px; display: inline-block; width: 17px;z-index: 10;">
+                 <!-- <input type="checkbox" class="showPassword" style="height: 17px; position: relative; left: 283px; top: 10px; display: inline-block; width: 17px;z-index: 10;"> -->
 
-                    <input type="password" required placeholder="****" class="newPassword" autocomplete="off" minlength="6" maxlength="12">
+                 <!-- optional ooo -->
+                        <!-- replaced the checkboxes with this, "eyes" -->
+                 <i class="toggle-password fas fa-eye" onclick="togglePasswordVisibility()"></i>
+
+                    <input type="password" required placeholder="******" class="newPassword" autocomplete="off" minlength="6" maxlength="12" title="6 to 12 characters" style="padding-left: 10px; padding-top: 5px;">
 
                     <label for="confirm_password">Confirm Password 
                         <span class="material-icons-sharp">
@@ -41,9 +46,13 @@
                         </span>
                     </label>
 
-                    <input type="checkbox" class="showPassword2" style="height: 17px; position: relative; left: 283px; top: 10px; display: inline-block; width: 17px; z-index: 10;">
+                    <!-- <input type="checkbox" class="showPassword2" style="height: 17px; position: relative; left: 283px; top: 10px; display: inline-block; width: 17px; z-index: 10;"> -->
 
-                    <input type="password" required placeholder="****" class="confirmPassword" autocomplete="off" minlength="6" maxlength="12">
+                    <!-- optional ooo -->
+                        <!-- replaced the checkboxes with this, "eyes" -->
+                    <i class="toggle-password2 fas fa-eye" onclick="togglePasswordVisibility2()"></i>
+
+                    <input type="password" required placeholder="******" class="confirmPassword" autocomplete="off" minlength="6" maxlength="12" title="6 to 12 characters" style="padding-left: 10px; padding-top: 5px;">
 
                 </div>
             <a href=""><input type="submit" value="Reset"></a>
@@ -58,13 +67,13 @@
         </div>
     </div>
     <!-- End of congratulatory message -->
-    <script src="https://cdn.jsdelivr .net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script/script.js"></script>
 </body>
 <!-----------------------FOOTER------------------------->
 <footer>
         <h5>  <span class="material-icons-sharp">
             copyright
-            </span> 2023 Ola_K_lois</h5>
+            </span> 2023 Ola_K_lois. All right reserved.For permission, requests or other inquiries contact me <a href="mailto:olakanmilois@gmail.com" >Olakanmi Lois</a></h5>
 </footer>
 </html>
