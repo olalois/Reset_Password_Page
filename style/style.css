@@ -8,9 +8,10 @@ form{
     background-color: white;
     height: 500px;
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 80px;
     padding: 0 30px;
 }
+/*=================== COMPANYS' LOGO =======================*/
 .reset_password_form .logo{
     /* background-color: rgb(202, 202, 247); */
     display: inline-block;
@@ -20,6 +21,7 @@ form{
     bottom: 80px;
     
 }
+/*==================== FORMS HEADER ======================*/
 .reset_form header{
     font-family:'Bruno Ace SC', 'poppins' ;
     font-size: xx-large;
@@ -31,28 +33,40 @@ form{
     display: flex;
     flex-direction: column;
 }
+/*========================= WHERE YOU ENTER YOUR DETAILS ======================*/
 .reset_form .input input{
     width: 300px;
     height: 35px;
     border: 2px solid rgb(228, 228, 238);
     border-radius: 10px;
+    position: relative;
+    bottom: 22px;
 }
+/*==================== TO PLACE PADDING BEFORE THE PLACEHOLDER OR PASSWORD =======================*/
+.reset_form .input input[type="password"]{
+    padding-left: 5px;
+    /* text-indent: 10px; */
+}
+/*====================== THE LABELS OF EACH INPUT ====================*/
 .reset_form .input label{
     font-family:'Bruno Ace SC', 'poppins' ;
     text-align: left;
     padding: 5px;
     color: black;
 }
+/*================== THE ICONS (PADLOCKS) =======================*/
 .reset_form .input label span{
     position:relative;
     top: 2.5px;
 }
+/*================== THE SUBMIT BUTTON ==========================*/
 .reset_form a input{
     /* background-color: rgb(21, 21, 238); */
     background-color: rgb(202, 202, 247);
     width: 300px;
     height: 40px;
-    margin-top: 40px;
+    margin-top: 18px;
+    margin-right: 10px;
     border-radius: 10px;
     border: 2px solid rgb(226, 226, 235);
     font-size: larger;
@@ -62,6 +76,7 @@ form{
     letter-spacing: 3px;
     cursor: pointer;
 }
+/*=================FOOTER SECTION ===============================*/
 footer{
     color: rgb(90, 89, 89);
     letter-spacing: 3px;
@@ -69,9 +84,57 @@ footer{
 }
 footer h5{
     position: relative;
-    bottom: px;
+    top: 3px;
 }
 footer h5 span{
     position: relative;
+    top: 8px;
+}
+/* congratulatory message */
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 11;
+}
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 80%;
+    width: 300px;
+    z-index: 11;
+}
+.close{
+    position: absolute;
     top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/* End of congratulatory message */
+/* Responsiveness */
+@media only screen and (max-width: 600px){
+    .popup{
+        max-width: 90%;
+    }
+    form{
+        max-width: 90%;
+    }
+    body{
+        max-width: 90%;
+    }
+    .reset_password_form .logo{
+        max-width: 90%;
+    }
 }
